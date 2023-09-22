@@ -1,7 +1,10 @@
 {
   "name": "electron-angular-exchange-rates",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
+    "e-start": "ng build --base-href ./ && electron .",
+    "e-build": "ng build --base-href ./ && electron-packager .",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -27,6 +30,7 @@
     "@angular/cli": "~16.2.3",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "electron": "^26.2.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

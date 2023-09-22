@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+}
+
+.content {
+    padding: 10px;
+    justify-self: center;
+    width: 100%;
+    max-width: 1500px;
+}
