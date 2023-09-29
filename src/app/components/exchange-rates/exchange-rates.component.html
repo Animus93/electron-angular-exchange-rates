@@ -1,0 +1,18 @@
+<!-- <div class="container" *ngIf="Exchanges$ | async as data">
+    <div class="content">
+        <div class="flag">{{data.base}}</div>
+    </div>
+</div> -->
+<!-- <div  [style]="'https://flagcdn.com/w40/je.png'"></div> -->
+<div class="container">
+    <div class="content">
+        <div class="top">
+            <img class="flag" *ngIf="state.flagSubject$ | async as data" class="test"
+                src='https://flagcdn.com/w40/{{data}}.png' alt="">
+            <p class="name" *ngIf="state.countrySubject$ | async as data">{{data}}</p>
+        </div>
+        <ul class="list" *ngIf="state.ratesSubject$ | async as data">
+            <li class="list__item" *ngFor="let item of data"><b>{{item[0]}}</b>  {{item[1]}}</li>
+        </ul>
+    </div>
+</div>

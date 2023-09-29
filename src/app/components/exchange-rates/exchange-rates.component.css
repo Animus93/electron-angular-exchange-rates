@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+}
+
+.content {
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+}
+
+.flag {
+    width: 100px;
+}
+
+.top {
+    display: flex;
+    gap: 15px
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
+.list__item {
+    list-style: none;
+    padding: 5px 0;
+    transition: all .5s;
+}
+
+.list__item:hover {
+    scale: 1.1
+}
+
+b {
+    color: rgb(27, 52, 134);
+}

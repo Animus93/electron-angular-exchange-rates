@@ -1,0 +1,6 @@
+<div class="content">
+    <button (click)="switchVisibility()" class="switchValue">Выбрать валюту</button>
+    <div [ngClass]="visibility? 'currList': 'currListHide'" *ngIf="symbols">
+        <li class="currList__item" (click)="swithTo(item)" *ngFor="let item of symbols">{{item[1]}}</li>
+    </div>
+</div>

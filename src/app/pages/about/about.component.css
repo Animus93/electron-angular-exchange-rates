@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.aboutProj {
+    max-width: 1000px;
+    width: 90vw;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 48, 138, 0.281);
+}
+
+/* .aboutProj__title {
+    padding: 5px 0;
+    margin: 0;
+} */
+
+.aboutMe {
+    max-width: 1000px;
+    width: 90vw;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 48, 138, 0.281);
+}
+
+.aboutMe__caption {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 3px 0;
+}
+a {
+    text-decoration: underline;
+    color: rgb(0, 110, 255);
+    scale: 1.2;
+    transition: all .5s;
+}
+
+a:hover {
+    color: rgb(0, 195, 255);
+}

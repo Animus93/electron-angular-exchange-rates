@@ -1,0 +1,74 @@
+.content {
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+
+.switchValue {
+    height: fit-content;
+    width: fit-content;
+    background: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 600;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.switchValue:hover {
+    box-shadow: inset 1px 1px 100px 3px rgb(255, 0, 0);
+    color: #fff;
+    scale: 0.98F
+}
+
+.currList {
+    top: 40px;
+    width: fit-content;
+    max-width: 90vw;
+    background-color: #ffffffd8;
+    /* padding: 0px 3px; */
+    /* min-height: 300px; */
+    overflow-y: scroll;
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 10px;
+    transition: all .5s;
+    animation: slideInDown .6s forwards;
+    max-height: 50vh;
+
+}
+
+.currList__item {
+    margin: 0;
+    list-style: none;
+    padding: 10px 4px;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.currList__item:hover {
+    background-color: red;
+    font-weight: 600;
+    color: #fff;
+}
+
+.currListHide {
+    display: none;
+    height: 500px;
+}
+
+@keyframes slideInDown {
+    0% {
+        min-height: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        min-height: 100%;
+    }
+}
